@@ -1,0 +1,326 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+body::-webkit-scrollbar {
+    background: transparent;
+}
+
+.pantalla {
+    width: 344px;
+    height: 659px;
+}
+
+.contenedor {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+
+/* --- --- ESTILOS GENERALES --- --- */
+
+a,
+a:hover {
+    color: #202020;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+h5 {
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+h6 {
+    text-align: left;
+    color: #949494;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+p {
+    text-align: left;
+    color: #949494;
+    font-size: 12px;
+}
+
+.blanco {
+    color: white;
+}
+
+.ancho-100 {
+    width: 100%;
+}
+
+.buscador {
+    border: none;
+    background-color: transparent;
+    color: #6a6a6a;
+    width: 100%;
+    border: none;
+    padding-left: 40px;
+}
+
+.buscador:focus {
+    outline: none;
+    box-shadow: none;
+    background-color: #E8E8E8;
+}
+
+.input-icono {
+    background-color: #E8E8E8;
+    display: flex;
+    width: 95%;
+    padding-left: 10px;
+    border-radius: 50px;
+    height: auto;
+    position: relative;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+.menu-hamburguesa {
+    height: 35px;
+    width: 35px;
+}
+
+.flecha {
+    height: 25px;
+    width: 25px;
+}
+
+.movil {
+    visibility: hidden;
+}
+
+.lupa {
+    height: 35px;
+    width: 40px;
+    padding: 5px 5px 5px 10px;
+    position: absolute;
+    left: 0px;
+}
+
+.micro {
+    height: 35px;
+    width: 40px;
+    padding: 5px 10px 5px 5px;
+    float: right;
+}
+
+.local {
+    height: 22px;
+    width: 22px;
+}
+
+
+/* --- --- CONTENEDOR PRINCIPAL --- --- */
+
+.contenido-principal {
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.contenido-principal__imagen {
+    vertical-align: top;
+    margin-right: 20px;
+    width: 50%;
+    max-width: 550px;
+}
+
+.contenido-principal__contenedor {
+    width: 50%;
+}
+
+.contenido-principal__titulo {
+    font-weight: normal;
+    font-size: 28px;
+}
+
+.contenido-principal__resumen {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 30px;
+    color: #CFCFCF;
+}
+
+
+/* --- --- CAROUSEL --- --- */
+
+.carousel__contenedor {
+    position: relative;
+    width: 100%;
+}
+
+.carousel__anterior,
+.carousel__siguiente {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    top: calc(50% - 35px);
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    background: none;
+    color: #fff;
+    opacity: 20%;
+}
+
+.carousel__anterior:hover,
+.carousel__siguiente:hover {
+    opacity: 100%;
+}
+
+.carousel__anterior {
+    top: 30px;
+    left: 10px;
+    height: 80%;
+    width: 60px;
+}
+
+.carousel__siguiente {
+    top: 30px;
+    right: 10px;
+    height: 80%;
+    width: 60px;
+}
+
+.carousel__lista {
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel__lista::-webkit-scrollbar {
+    background: transparent;
+}
+
+.carousel__elemento {
+    text-align: center;
+}
+
+.carousel__indicadores .glider-dot {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    opacity: .2;
+    border-radius: 0;
+}
+
+.carousel__indicadores .glider-dot:hover {
+    opacity: .5;
+}
+
+.carousel__indicadores .glider-dot.active {
+    opacity: 1;
+}
+
+.imagen-estilo {
+    height: 220px;
+    width: auto;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: white;
+    font-size: 12px;
+    text-align: left;
+}
+
+.lugares-estilo {
+    height: 70px;
+    width: 140px;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.personas-estilo {
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+    border-radius: 50px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.boton-persona {
+    background-color: #202020;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.trips-estilo {
+    width: 100%;
+    height: 220px;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: white;
+    font-size: 12px;
+    text-align: left;
+    display: flex;
+    align-items: flex-end;
+}
+
+.details-estilo {
+    height: 140px;
+    width: 280px;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        padding: 40px 0;
+    }
+    .pantalla {
+        width: 100%;
+        height: auto;
+    }
+    .contenido-principal {
+        flex-direction: column;
+    }
+    .contenido-principal>* {
+        width: 100%;
+    }
+    .movil {
+        visibility: visible;
+    }
+}

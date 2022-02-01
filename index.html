@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App de viajes</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Glider.js -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body style="margin: 0px; padding: 0px; overflow-x: hidden;">
+
+    <div class="pantalla">
+
+        <!-- -------------------------------------------- Navegacion ----------------------------------------------------- -->
+
+        <nav class="navbar navbar-expand-lg px-2 mt-2">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <h1>Explore Cities</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <img class="menu-hamburguesa" src="menu.png">
+                </button>
+                <div class="collapse navbar-collapse movil" id="navbarSupportedContent">
+                    <a href="trips.html">My Trips</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- -------------------------------------------- Barra de busqueda ----------------------------------------------------- -->
+
+        <div class="px-2 input-icono">
+            <input class="form-control buscador" type="search" placeholder="Search" aria-label="Search">
+            <img src="lupa.png" class="lupa">
+            <a><img src="microfono.png" class="micro"></a>
+        </div>
+
+        <!-- -------------------------------------------- Carousel Cities ----------------------------------------------------- -->
+
+        <div class="carousel">
+
+            <div class="px-2 mt-4">
+                <h4 style="float: left;">Popular Cities</h4>
+                <a>
+                    <h6 style="float: right">View All</h6>
+                </a>
+            </div>
+
+            <div class="carousel__contenedor">
+
+                <div id="carrusel" class="carousel__lista" style="overflow-x: scroll;">
+                    <div class="carousel__elemento">
+                        <div class="imagen-estilo" style="background-image: url('c-1.jpg');">t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that</div>
+                        <h5>New York</h5>
+                        <h6>United States</h6>
+                    </div>
+                    <div class="carousel__elemento">
+                        <div class="imagen-estilo" style="background-image: url('c-2.jpg');"></div>
+                        <h5>Paris</h5>
+                        <h6>France</h6>
+                    </div>
+                    <div class="carousel__elemento">
+                        <div class="imagen-estilo" style="background-image: url('c-3.jpg');"></div>
+                        <h5>Tokyo</h5>
+                        <h6>Japan</h6>
+                    </div>
+                    <div class="carousel__elemento">
+                        <div class="imagen-estilo" style="background-image: url('c-4.jpg');"></div>
+                        <h5>Madrid</h5>
+                        <h6>Spain</h6>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- -------------------------------------------- Carousel Places ----------------------------------------------------- -->
+
+        <div class="carousel">
+
+            <div class="px-2 mt-2">
+                <h4 style="float: left;">Popular Places</h4>
+                <a>
+                    <h6 style="float: right">View All</h6>
+                </a>
+            </div>
+
+            <div class="carousel__contenedor">
+
+                <div id="carrusel2" class="carousel__lista" style="overflow-x: scroll;">
+                    <div class="carousel__elemento">
+                        <div class="lugares-estilo" style="background-image: url('p-1.jpg');"></div>
+                    </div>
+                    <div class="carousel__elemento">
+                        <div class="lugares-estilo" style="background-image: url('p-2.jpg');"></div>
+                    </div>
+                    <div class="carousel__elemento">
+                        <div class="lugares-estilo" style="background-image: url('p-3.jpg');"></div>
+                    </div>
+                    <div class="carousel__elemento">
+                        <div class="lugares-estilo" style="background-image: url('p-4.jpg');"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- -------------------------------------------- Carousel Personas ----------------------------------------------------- -->
+
+        <div class="carousel">
+
+            <div class="px-2 mt-2">
+                <h4 style="float: left;">Travel with friends</h4>
+                <a>
+                    <h6 style="float: right">View All</h6>
+                </a>
+            </div>
+
+            <div class="carousel__contenedor">
+
+                <div id="carrusel3" class="carousel__lista" style="overflow-x: scroll;">
+                    <div class="carousel__elemento" style="min-width: 70px;">
+                        <div class="personas-estilo" style="background-image: url('a-1.jpg');"></div>
+                    </div>
+                    <div class="carousel__elemento" style="min-width: 70px;">
+                        <div class="personas-estilo" style="background-image: url('a-2.jpg');"></div>
+                    </div>
+                    <div class="carousel__elemento" style="min-width: 70px;">
+                        <div class="personas-estilo" style="background-image: url('a-3.jpg');"></div>
+                    </div>
+                    <div class="carousel__elemento" style="min-width: 70px;">
+                        <div class="personas-estilo" style="background-image: url('a-4.jpg');"></div>
+                    </div>
+                    <div class="carousel__elemento" style="min-width: 70px;">
+                        <div class="personas-estilo" style="background-image: url('a-5.jpg');"></div>
+                    </div>
+                    <div class="carousel__elemento" style="min-width: 70px;">
+                        <div class="personas-estilo" style="background-image: url('a-6.jpg');"></div>
+                    </div>
+                    <div class="carousel__elemento" style="min-width: 70px;">
+                        <div class="personas-estilo" style="background-image: url('a-1.jpg');"></div>
+                    </div>
+                    <div class="carousel__elemento" style="min-width: 70px;">
+                        <div class="personas-estilo" style="background-image: url('a-2.jpg');"></div>
+                    </div>
+                    <div class="carousel__elemento" style="min-width: 70px;">
+                        <div class="personas-estilo" style="background-image: url('a-3.jpg');"></div>
+                    </div>
+                    <div class="carousel__elemento" style="min-width: 70px;">
+                        <div class="personas-estilo" style="background-image: url('a-4.jpg');"></div>
+                    </div>
+                    <div class="carousel__elemento" style="min-width: 70px;">
+                        <div class="personas-estilo" style="background-image: url('a-5.jpg');"></div>
+                    </div>
+                    <div class="carousel__elemento" style="min-width: 70px;">
+                        <div class="personas-estilo" style="background-image: url('a-6.jpg');"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
